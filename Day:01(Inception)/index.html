@@ -7,20 +7,40 @@
     <title>Namaste React</title>
 </head>
 <body>
+    <!--Basic HTML Heading-->
     <div id="root">
-        <h1>Hello World</h1>
+        <!-- <h1>Hello World</h1> -->
     </div>
-    <script>
 
-        const heading=document.createElement("h2")
-        heading.innerHTML="Hello World from JavaScript"
-        const root =document.getElementById("root")
-        root.appendChild(heading)
-        
+
+
+    <!--Heading using JavaScript-->
+    <script>
+        // const heading=document.createElement("h2")
+        // heading.innerHTML="Hello World from JavaScript"
+        // const root =document.getElementById("root")
+        // root.appendChild(heading) 
     </script>
+
+
+
     <!--  CDN : A content delivery network (CDN) is a network of interconnected servers that 
         speeds up webpage loading for data-heavy applications.  -->
+     <!-- Core React Component -->
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+     <!-- DOM Element -->
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+
+
+    <!--Creating the Hello world using the react-->
+    <script>
+        const head=React.createElement("h1",{},"Hello World from React");
+        const roots=ReactDOM.createRoot(document.getElementById("root"));
+        roots.render(head)
+    </script>
+
+
+
 </body>
 </html>
