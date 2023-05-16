@@ -1,3 +1,11 @@
+/*
+React JS
+
+-> React is a library not a framework , because it apply on the smaller portion of the application
+rather than the whole application.
+
+*/ 
+
 // const head = React.createElement(
 //     "h1", {
 //     id: "heading",

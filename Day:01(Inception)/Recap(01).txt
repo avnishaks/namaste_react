@@ -1,0 +1,10 @@
+Recap of the Episodes : 01 of the Inception About the React JS
+
+1. Injecting h1 tag inside the HTML , JavaScript and React JS.
+2. Use of the CDN link inside the HTML , project to use the React JS library , order of the 
+file will be in synchronized order.
+3. We have created the React JS element , and createElement of React JS return the object
+4. If we have some portion of tag above and below the given id="root" , then we apply
+the react changes just in the small portion of the component rather than the whole component.
+5. React js is libraries with helps to ignite our React Application.
+
