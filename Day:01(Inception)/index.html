@@ -9,9 +9,15 @@
 </head>
 <body>
     <!--Basic HTML Heading-->
+    <!-- Above / Below the id ="root" element for the tag h1 is coming correctly  will be not replace 
+        only the id part is replaced
+    -->
+    <h1>Hello , I ABOVE root</h1>
     <div id="root">
         <!-- <h1>Hello World</h1> -->
+        <h1>Hello , I am root</h1>
     </div>
+    <h1>Hello , I BELOW root</h1>
 
 
 
@@ -39,7 +45,18 @@
         
     </script>
 
+    <!--
+        * Order of the File is important for us
+        * JavaScript will script comes after the imported Component
+        * crossorigin file imported Order will be also important for us 
+          React development and React DOM development
+        
 
+        Order must be important :- 
+        1. Core React File
+        2. React DOM File 
+        3. JavaScript File
+    -->
 
 </body>
 </html>
