@@ -71,9 +71,20 @@ components.
 Every node_modules project has its own separate package.json and all it has its own 
 dependencies and it is called transitive dependency.
 Notes :- node_modules is a collections of the dependencies.
+
 --------------------------------------------------------------------------------------------------------------------------------
 
+8. What is the difference between NPM and NPX commands?
 
+Ans :- 
+
+a. NPM : It helps us to install the packages or dependencies in package.json
+npm install express/ nodemon / parcel / vite  or any other npm package
+
+b. NPX : It helps us to execute the install package or dependencies over the localhost server. 
+For eg: npx parcel index.html [ npx(command) , parcel(package ) , index.html (base file)]
+
+--------------------------------------------------------------------------------------------------------------------------------
 
 
 
