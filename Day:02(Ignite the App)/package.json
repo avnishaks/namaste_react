@@ -4,7 +4,8 @@
   "description": "This is Namaste React Day 02 , Ignite the APP",
   "main": "App.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start":"node App.js"
   },
   "repository": {
     "type": "git",
