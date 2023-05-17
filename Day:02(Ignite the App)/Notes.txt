@@ -1,0 +1,37 @@
+1. What is NPM ?
+
+Ans : - NPM ( Its not the Node Package Manager) , in the official site its show the random name
+for NPM . NPM has no full form , apart from this NPM manage the package of the node , but doesn't
+stand for the node package manager.
+
+2. package.json : Its a configuration file for the NPM package
+
+3. Bundler :- A bundler is a development tool that combines many JavaScript code files into a
+single one that is production-ready loadable in the browser. A fantastic feature of a bundler is 
+that it generates a dependency graph as it traverses your first code files.
+
+(webpack, Parcel, vite)
+
+create-react-app : use the webpack bundler to create a react app 
+
+a. webpack-bundler : entery , output , module , plugins
+
+c. Parcel : Parcel. js is an open-source bundler. It supports many popular languages like 
+Typescript and SASS, and can also handle file types like images and fonts. Parcel comes with 
+a few extra tools built-in: a development server, diagnostics, minification, and even image 
+compression.
+
+npm install -D parcel ( -D denotes the dev dependencies)
+
+b. Vite :- Vite is a faster and lighter dev server and bundler than Webpack, specifically designed 
+for modern JavaScript frameworks like Vue and React. Vite takes advantage of ES modules in the 
+browser to create a feedback loop that allows for faster development and hot reloading.
+
+
+4. Dependency : When we install the app then we have two dependencies which will prompt to us
+for any app we install 
+
+a. Normal Dependency : It requires in dev and in production environments both for running the
+application.
+b. Dev Dependency : It generally requires only when we develop the app.
+

@@ -1,0 +1,27 @@
+{
+  "name": "ignite_the_app",
+  "version": "1.0.0",
+  "description": "This is Namaste React Day 02 , Ignite the APP",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avnishaks/namaste_react.git"
+  },
+  "keywords": [
+    "react",
+    "namaste_react",
+    "avnishaks"
+  ],
+  "author": "avnishaks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avnishaks/namaste_react/issues"
+  },
+  "homepage": "https://github.com/avnishaks/namaste_react#readme",
+  "dependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
