@@ -86,7 +86,73 @@ For eg: npx parcel index.html [ npx(command) , parcel(package ) , index.html (ba
 
 --------------------------------------------------------------------------------------------------------------------------------
 
+9. What happen when we install the react and remove the CDN link ?
 
+Ans:- 
+
+Simple answer : After the installation of the react and remove the CDN link , then function or
+actions performed in the react , is removed , don't able to creatElement or render the element.
+
+Solution : We need to import react from the node_modules folder.
+[ import React from " react "  ] -> Syntax
+
+Also in the base file of the html we need to provide the type of folder we are importing
+<script src="./App.js" type="module"> :-> using this file we used to get rid of errors
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+10. When we start developing something ,and we are using the parcel as bundle module , then 
+it automatically refresh the page , to give realtime visulization.
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+11. Pracel Helping us with lots of information
+
+-> Dev Build
+-> Local Server
+-> HMR -> Hot Module Replacement ( Automatically Refresh the text , when we save it )
+-> File Watching Alogrithm used by Pracel written in C++.
+-> Caching : Faster Build Experience
+-> Image Optimization
+-> Minification of File
+-> Bundling of File
+-> Compressing of File
+-> Consistent Hashing
+-> Code Spliting
+-> Differntial Bundling -> support for the older browser
+-> Diagnostics [ Beautify the Error Logs on the UI ]
+-> Error Handling
+-> Way to Host the App on HTTPS [ npx parcel index.html --https ]
+-> Tree Shaking Algorithms : - Parcel will remove the unused code for you .
+-> Creates the differnt build for dev and production bundles.
+
+BUILD DEVELOPMENT AND PRODUCTION BUILD
+
+To generate the [development] build : [ npx parcel index.html ]
+To generate the [production] build : [ npx parcel build index.html ] and 
+remove "main":"App.js" from package.json
+
+Notes :-  Apart from the React , their is more things in Bundler which is helping 
+the web app conating the react js library making it faster than normal app.
+
+
+Important:- 
+
+When we run the command "npx parcel index.html" parcel will generate a dist folder conatins the 
+production code from when we open the localhost from their its coming for us. When we save 
+the file then it use the folder .parcel-cache to perform HMR.
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+12. BrowserList
+
+In package.json , if we provide the browser list for which it should work will be defentely 
+work with the listed browser list , but for rest of the browser list it might work or not.
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------
 
 
 

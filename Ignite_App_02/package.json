@@ -2,7 +2,7 @@
   "name": "ignite_the_app",
   "version": "1.0.0",
   "description": "This is Namaste React Day 02 , Ignite the APP",
-  "main": "App.js",
+
   "scripts": {
     "test": "jest",
     "start": "node App.js"
@@ -28,5 +28,9 @@
   },
   "devDependencies": {
     "parcel": "^2.8.3"
-  }
+  },
+  "browsersList":[
+    "last 2 version",
+    "> 1% in US"
+  ]
 }
