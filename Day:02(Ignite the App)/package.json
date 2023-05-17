@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/avnishaks/namaste_react#readme",
   "dependencies": {
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "vite": "^4.3.7",
+    "webpack": "^5.82.1"
   }
 }
