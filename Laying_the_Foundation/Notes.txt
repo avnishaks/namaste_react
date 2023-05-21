@@ -1,0 +1,12 @@
+1. Adding the script in package.json then we able to run the script
+
+"scripts": {
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+}
+
+npm run start or npm start [ Build Development Project ] => start is keyword reserved by npm
+npm run build [ Build Production Project ]
+
+--------------------------------------------------------------------------------------------------------------------------------
