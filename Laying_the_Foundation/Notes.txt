@@ -51,4 +51,38 @@ For eg:-
 const jsxheading=(<h1 className="head" tabIndex="1">Namaste React using JSX</h1>)
 --------------------------------------------------------------------------------------------------------------------------------
 
+6. React Component 
+
+Their are mainly two types of components in the React :- 
+1. Class Based Component - OLD way of writing code
+2. Functional Component - NEW way of writing code -> declare variables in capital letter
+
+Functional Component : 
+a. A Function that return the JSX code is called the Functional Component.
+b. A functional that return the React Element.
+
+
+React Element vs React Component
+
+// React Element 
+const heading = (
+  <h1 className="head" tabIndex="1">
+    Namaste React using JSX
+  </h1>
+);
+
+// React Component 
+const Heading =()=> (
+  <h1 className="head" tabIndex="1">
+    Namaste React using JSX
+  </h1>
+);
+
+To render the React Component
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<HeadingComponent/>);
+
+--------------------------------------------------------------------------------------------------------------------------------
+
 
