@@ -86,3 +86,49 @@ root.render(<HeadingComponent/>);
 --------------------------------------------------------------------------------------------------------------------------------
 
 
+7. Putting the React Element inside the React Component 
+
+// React Element
+const shape=(
+    <h1>Its a new shape and formation</h1>
+)
+
+// Putting the React Element inside the React Component
+
+const HeadingComponent = () => (
+  <div id="container">
+    {shape}
+    <Tittle />
+    <h1 className="head" tabIndex="1">
+      Namaste React using Functional Component
+    </h1>
+  </div>
+);
+
+
+using normal {} => Brackets , gets the variables inserted inside it. 
+Same way goes for putting the React Element inside the React Element
+
+Functional Component is the Javascript Function at the end of the Day 
+--------------------------------------------------------------------------------------------------------------------------------
+
+8. JSX has only one parent div element  , to avoid this issues , we have react fragments , to get more
+parent we use Fragment for JSX
+
+ <>
+    <div id="container">
+      {shape}
+      <Tittle />
+      <h1 className="head" tabIndex="1">
+        Namaste React using Functional Component
+      </h1>
+    </div>
+    <div id="container2"></div>
+  </>
+
+
+End of Epiosde 3 : Layout The Foundation
+
+Fundamentals of JSX with React Element and React Component is covered !
+
+
