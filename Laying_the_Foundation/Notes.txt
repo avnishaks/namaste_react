@@ -8,5 +8,47 @@
 
 npm run start or npm start [ Build Development Project ] => start is keyword reserved by npm
 npm run build [ Build Production Project ]
-
 --------------------------------------------------------------------------------------------------------------------------------
+2. What is JSX ?
+
+Ans :- JavaScript XML helps us to add or create the html inside the React Project.
+--------------------------------------------------------------------------------------------------------------------------------
+3. What happen when we write the code in JavaScript in project , is JS Engine understand it ?
+
+JSX => Babel transpiles it to React.createElement => ReactElement -JS object => HTMLElement (render)
+
+Ans : JavaScript understand the Ecmma Script language (ES+{number})=> ES6 language , when we 
+write the code , it gets transpiled before going to the JS engine , so that browser can understand.
+
+Tanspilation of code is Done by Parcel bundle module , we have install only parcel bundle module
+but parcel itself installed its own package management bable , to perform this task for Transpilation.
+
+All the Below code is Transpiled before going to the JS engine, so browser can understand :- 
+
+import React, { createElement } from "react";
+import ReactDOM from "react-dom/client";
+
+const head=React.createElement("h1",{id:"heading"},"Abhi bhor bhayo");
+
+console.log(head)
+
+// JSX : HTML-like or XML-like Syntax
+const jsxheading=<h1 id="heading">Namaste React using JSX</h1>
+
+console.log(jsxheading)
+
+const root=ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(jsxheading);
+EXAMPLE :- 
+Transpilation / Compilation  image is uploaded for JS code by Babel !
+--------------------------------------------------------------------------------------------------------------------------------
+4. For giving the attributes to the JSX we need to provide in the camel case.
+For eg :- className , tabIndex
+--------------------------------------------------------------------------------------------------------------------------------
+5. For writing the JSX in the multi line we need to wrap the JSX in the () => Brackets .
+For eg:- 
+const jsxheading=(<h1 className="head" tabIndex="1">Namaste React using JSX</h1>)
+--------------------------------------------------------------------------------------------------------------------------------
+
+
