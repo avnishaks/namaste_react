@@ -1,5 +1,5 @@
 import React, { createElement } from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM,{createRoot} from "react-dom/client";
 
 // React Functional Component
 
