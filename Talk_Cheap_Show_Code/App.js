@@ -1,49 +1,47 @@
 import React, { createElement } from "react";
-import ReactDOM ,{createRoot} from "react-dom/client";
+import ReactDOM, { createRoot } from "react-dom/client";
 
-
-const Tittle =()=>(
-  <h1 className="title" key="h1">
-   Food Villa
-  </h1>
+const Tittle = () => (
+  <img
+    className="logo"
+    alt="logo"
+    src="https://static.ambitionbox.com/assets/v2/images/rs:fit:1280:960:false:false/bG9jYWw6Ly8vbG9nb3Mvb3JpZ2luYWxzL3N3aWdneS5qcGc.png"
+  />
 );
 
-const AppLayout =()=>{
-  return(
-  {
-    /*
-    Header
-      - Logo
-      - Nav iteam (Right side)
-      - Cart  
-    Body Component
-      -Search Bar
-      -Resturant List
-        -Resturant cards 
-            - Image
-            - Name 
-            - Rating 
-            - Cusines
-     Footer
-      - link
-      - Copyright
-    */
-  }
-)
-}
-
-const HeadingComponent = () => (
+const Header = () => (
   <>
-    <div id="container">
+    <div className="header">
       {Tittle()}
-      <h1 className="head" tabIndex="1">
-        Namaste React using Functional Component
-      </h1>
+      <div className="nav-items">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact Us</li>
+          <li>Cart</li>
+        </ul>
+      </div>
     </div>
   </>
 );
-  
+
+const Body = () => {
+  return <h4> BodyComponent </h4>;
+};
+const Footer = () => {
+  return <h4> FooterComponent </h4>;
+};
+
+const AppLayout = () => {
+  return (
+    <>
+      <Header />
+      <Body />
+      <Footer />
+    </>
+  );
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<HeadingComponent />);
+root.render(<AppLayout />);
