@@ -35,3 +35,15 @@ use div to give the styling to the react.
 --------------------------------------------------------------------------------------------------------------------------------
 
 
+Config Driven UI :- 
+
+UI is driven by the config file , their we have to config the file to drive the UI 
+for same briyani same card will be shown at different price point at different 
+location. According to Data coming from the Backend their is change in the UI.
+
+
+
+We need to find add key , as React does not identify the key value uniquely 
+
+Don't use the index as the key value in React JS.
+
