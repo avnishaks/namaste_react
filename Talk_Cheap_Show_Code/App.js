@@ -3,7 +3,7 @@ import ReactDOM, { createRoot } from "react-dom/client";
 
 const Tittle = () => (
   <img
-    className="logo"
+    className="res-logo"
     alt="logo"
     src="https://static.ambitionbox.com/assets/v2/images/rs:fit:1280:960:false:false/bG9jYWw6Ly8vbG9nb3Mvb3JpZ2luYWxzL3N3aWdneS5qcGc.png"
   />
@@ -34,11 +34,13 @@ const BurgerKing={
 
 const RestrauntCard = () => {
   return (
-    <div className="card">
+    <div className="res-card">
        <img src={BurgerKing.img} />
+       <div className="res-property">
        <h5>{BurgerKing.name}</h5>
        <h6>{BurgerKing.cousines.join(",")}</h6>
        <h7>{BurgerKing.ratings} stars</h7>
+       </div>
 
     </div>
   );
@@ -46,7 +48,9 @@ const RestrauntCard = () => {
 
 const Body = () => {
   return (
-    <div className="restro-list">
+    <div className="body">
+    <div className="search">Search</div>
+    <div className="res-conatainer">
       <RestrauntCard/>
       <RestrauntCard/>
       <RestrauntCard/>
@@ -59,6 +63,7 @@ const Body = () => {
       <RestrauntCard/>
       <RestrauntCard/>
       <RestrauntCard/>
+    </div>
     </div>
   );
 };
