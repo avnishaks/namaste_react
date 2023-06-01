@@ -1,0 +1,54 @@
+/* #-> id is declared with the hash key */
+#heading{
+    color: red
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+.nav-items >ul{
+    list-style-type: none;
+    display:flex;
+}
+.nav-items >ul >li{
+    padding: 10px;
+    border: 1px solid black;
+    margin-right:10px;
+    font-size:24px;
+}
+
+.res-logo{
+    width:100px;
+}
+
+.res-card{
+    width:300px;
+    padding: 10px;
+    margin:10px;
+    color:#808080;
+}
+
+.res-card:hover{
+    border: 1px solid black;
+    cursor:pointer;
+}
+
+.res-card > img{
+    width:100%;
+}
+
+.res-conatainer{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+
+.res-property{
+    color:black;
+}
+
+.search{
+    padding: 10px;
+}
