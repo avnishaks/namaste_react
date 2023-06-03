@@ -49,6 +49,14 @@
     color:black;
 }
 
-.search{
-    padding: 10px;
+.res-property>h7{
+    color:red;
+    text-align:center;
+    font-style:italic
+}
+
+.filter-btn{
+    margin:10px;
+    cursor:pointer;
+    align-items:center;
 }
