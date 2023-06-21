@@ -183,3 +183,147 @@ class UserClass extends React.Component {
 }
 
 export default UserClass;
+
+
+# React Life Cycle Method Class Based Components
+
+1. Constructor 
+2. Render Method
+3. componentDidMount Method => it is used for making the API calls 
+
+
+/ Class Based Component 
+import React from "react"
+
+class UserClass extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            count: 0
+        }
+
+        console.log("child :- UserClass Constructor"); -> 1. Constructor call
+    }
+
+    componentDidMount(){
+        console.log("child:- UserClass ComponentDidMount"); 3. componetDidMount call
+    }
+
+    render() {
+        console.log("child :- UserClass Render"); 2. Render Method call
+
+        const { count, value } = this.state;
+        return (
+            <div className="user-card">
+                <h2>Count : {count}</h2>
+            </div>
+        )
+    }
+}
+
+export default UserClass;
+
+"" If we have a parent child relation "" , then :- >
+
+1. Parent Constructor
+2. Parent Render Method
+3. Child Constructor
+4. Child Render Method
+5. Child componentDidMount
+6. Parent componentDidMount
+
+
+" If we make a two call for the child class "
+
+
+# React Life cycle Diagram 
+
+React Life cycle Diagram has two phases :- 
+
+1. Render Phase :- Pure and has no side effect. May be paused , restarted or aborted by React.
+[ Constructor / Render ]
+
+2. Commit Phase :- Can work with DOM run side effects, schdule update.
+[ componentDidMount ]
+
+Commit Phase deals with DOM manipulation , for which its take the time , so React batch all the
+Render Phase of child class , together and perform commit phase of each child class one by one.
+
+
+" If we make a two call for the child class "
+
+First Render phase ( Constructor / Render ) is completed then the commit phase happen ( componentDidMount )
+
+import { Component } from "react";
+import User from "./User";
+import UserClass from "./UserClass";
+
+class About extends Component {
+    constructor(props){
+        super(props)
+
+        console.log("About Class Constructor");
+    }
+
+    componentDidMount(){
+        console.log("About Class Mount");
+    }
+
+    render(){
+
+        console.log("About Class Render")
+        return(
+            <div>
+                <h3>Functional Component</h3>
+                <User name={"Avnish Kumar (Functional Component)"}/>
+                <br></br>
+                <h3>Class Based Component</h3>
+                <UserClass name={"First"}/>
+                <UserClass name={"Second"}/>
+                <UserClass name={"Third"}/>
+    
+            </div>
+        )
+    }
+}
+
+export default About;
+
+
+Output :- 
+
+
+... Render Phase Parent ...
+About class constructor -> parent constructor
+About class render  -> parent render
+
+
+... Render phase of First / Second / Third Child ...
+
+... Render phase First Child ...
+First Child Constructor
+First Child Render
+
+
+... Render phase Second Child ...
+Second Child Constructor
+Second Child Render
+
+... Render phase Third Child ...
+Third Child Constructor
+Third Child Render
+
+... componentDidMount of First / Second / Third child ...
+First Child componentDidMount
+Second Child componentDidMount
+Third Child componentDidMount
+
+
+
+... componentDidMount of parent  ...
+About class componentDidMount
+
+
+
+
+Next Start Time : 1:32:45 
