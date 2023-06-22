@@ -1,5 +1,3 @@
-# In this section we are going to cover the concept of the React Hooks
-
 
 # General Overview of the UI Design of App 
 
@@ -23,6 +21,11 @@
         - link
         - copyright
 }
+
+
+# Research Topic 
+1. Super props
+2. async not used with useEffect()
 
 # Functional Component 
 
@@ -326,4 +329,79 @@ About class componentDidMount
 
 
 
-Next Start Time : 1:32:45 
+# API call in Class Based Component
+
+1. We can make the componentDidMount Function async , and make the api call.
+
+React Life cycle with API data 
+
+Mounting -> Showing HTML on UI [ When we come to the page then it is called ]
+UnMounting -> Disabling HTML on UI [ When we go from the page then it is called ]
+
+React Life Cycle 
+
+1. ----- Mounting ----- { Showing HTML on UI [ When we come to the page then it is called ] }
+
+Constructor (Dummy Data)
+Render (Dummy Data)
+        <HTML Dummy Data>
+
+componentDidmount
+        <API Call>
+        <this.setState> -> State variable is updated
+
+2. ----- Updating ------
+
+    render (API Data)
+    <HTML API data>
+
+componentDidupdate
+syntax :- 
+componentDidUpdate(){
+        console.log("Component Did Update")
+}
+
+3. ---- Unmounting ----- [ Disabling HTML on UI [ When we go from the page then it is called ] ]
+syntax:- 
+componentWillUnmount(){
+    console.log("Component Will Unmount")
+}
+
+componentwillmount
+
+
+# what is the need of componentDidmount and componentWillUnmount in class based component ?
+
+componentDidmount:- when we enter the page console data start printing for us.
+syntax:-
+componentDidMount(){
+       this.timer=setInterval(()=>{
+            console.log("AVNISH KUMAR SINGH")
+       },1000)
+}
+
+componentWillUnmount:- when we leave the page the timer stop for printing the console data.
+syntax :- 
+componentWillUnmount(){
+        clearInterval(this.timer)
+}
+
+# How we handle the mouting and unmounting in Function Based component ?
+
+ useEffect(()=>{
+        -- Mounting ---
+
+        const timer=setInterval(()=>{
+            console.log("AKS ROCKS");
+        },1000)
+       
+        -- Unmounting ---
+
+        return()=>{
+           clearInterval(timer)
+        }
+
+},[])
+
+
+

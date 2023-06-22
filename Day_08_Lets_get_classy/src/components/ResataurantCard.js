@@ -14,9 +14,9 @@ const RestrauntCard = (props) => {
       <div className="res-property">
         <h5>{name}</h5>
         <h6>{cuisines.join(",")}</h6>
-        <h7>{totalRatingsString} stars</h7>
+        <h6>{totalRatingsString} stars</h6>
         <br></br>
-        <h7>Avg Rating : {avgRating}</h7>
+        <h6>Avg Rating : {avgRating}</h6>
       </div>
     </div>
   );

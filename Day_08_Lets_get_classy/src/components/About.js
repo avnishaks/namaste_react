@@ -6,25 +6,21 @@ class About extends Component {
     constructor(props){
         super(props)
 
-        console.log("About Class Constructor");
+        //console.log("About Class Constructor");
     }
 
     componentDidMount(){
-        console.log("About Class Mount");
+        //console.log("About Class Mount");
     }
 
     render(){
 
-        console.log("About Class Render")
+        //console.log("About Class Render")
         return(
             <div>
                 <h3>Functional Component</h3>
                 <User name={"Avnish Kumar (Functional Component)"}/>
-                <br></br>
-                <h3>Class Based Component</h3>
-                <UserClass name={"First"}/>
-                <UserClass name={"Second"}/>
-                <UserClass name={"Third"}/>
+               
     
             </div>
         )

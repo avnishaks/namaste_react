@@ -1,9 +1,20 @@
 // Function Based component
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+
 
 const User = (props) => {
     const [count,setcount]=useState(0);
+
+    useEffect(()=>{
+        const timer=setInterval(()=>{
+            console.log("AKS ROCKS");
+        },1000)
+        return()=>{
+           clearInterval(timer)
+        }
+    },[])
+
     return (
         <div className="user-card">
             <h2>Count = {count}</h2>
