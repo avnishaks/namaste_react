@@ -37,3 +37,23 @@ To get understand react about hooks we use starting character "use" To get know 
 
 
 
+# Chunking , Code Spliting , Dynamic Bundling ,Lazy Loading , OnDemand Loading, Dynamic import ( All means same )
+
+Breaking / Spliting the App into small chunks 
+
+# lazy loading concept
+
+If we want seperate bundle for the component , then we lazy load the component 
+
+1. importing  the file is different 
+
+-> first import lazy and suspense from the React , lazy is used importing the path while 
+suspense is used to wrap the component
+
+-> syntax for lazy : 
+const Grocery =lazy(()=>import("./components/Grocery"))
+
+-> syntax for suspense : 
+<Suspense fallback={<h1>Loading .... Grocery... Wait ... Wait </h1>}><Grocery/></Suspense> 
+
+
