@@ -1,0 +1,37 @@
+{
+  "name": "Lets get Hooked",
+  "version": "1.0.0",
+  "description": "\"In this we talk about the React JS by buiding a Food App \"",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avnishaks/namaste_react.git"
+  },
+  "keywords": [
+    "react",
+    "namaste_react",
+    "avnishaks"
+  ],
+  "author": "avnishaks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avnishaks/namaste_react/issues"
+  },
+  "homepage": "https://github.com/avnishaks/namaste_react#readme",
+  "dependencies": {
+    "nodemon": "^2.0.22",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.13.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "postcss": "^8.4.24",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.3.2"
+  }
+}
